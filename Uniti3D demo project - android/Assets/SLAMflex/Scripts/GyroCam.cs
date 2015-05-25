@@ -1,23 +1,25 @@
-﻿// Gyroscope-controlled camera for iPhone  Android revised 2.26.12
-// Perry Hoberman <hoberman@bway.net>
-//
-// Usage:
-// Attach this script to main camera.
-// Note: Unity Remote does not currently support gyroscope.
-//
-// This script uses three techniques to get the correct orientation out of the gyroscope attitude:
-// 1. creates a parent transform (camParent) and rotates it with eulerAngles
-// 2. for Android (Samsung Galaxy Nexus) only: remaps gyro.Attitude quaternion values from xyzw to wxyz (quatMap)
-// 3. multiplies attitude quaternion by quaternion quatMult
-// Also creates a grandparent (camGrandparent) which can be rotated with localEulerAngles.y
-// This node allows an arbitrary heading to be added to the gyroscope reading
-// so that the virtual camera can be facing any direction in the scene, no matter what the phone's heading
-//
-// Ported to C# by Simon McCorkindale <simon <at> aroha.mobi>
+﻿/// Gyroscope-controlled camera for iPhone  Android revised 2.26.12
+/// Perry Hoberman <hoberman@bway.net>
+///
+/// Usage:
+////Attach this script to main camera.
+/// Note: Unity Remote does not currently support gyroscope.
+///
+/// This script uses three techniques to get the correct orientation out of the gyroscope attitude:
+/// 1. creates a parent transform (camParent) and rotates it with eulerAngles
+/// 2. for Android (Samsung Galaxy Nexus) only: remaps gyro.Attitude quaternion values from xyzw to wxyz (quatMap)
+/// 3. multiplies attitude quaternion by quaternion quatMult
+/// Also creates a grandparent (camGrandparent) which can be rotated with localEulerAngles.y
+/// This node allows an arbitrary heading to be added to the gyroscope reading
+/// so that the virtual camera can be facing any direction in the scene, no matter what the phone's heading
+///
+/// Ported to C# by Simon McCorkindale <simon <at> aroha.mobi>
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Gyroscope-controlled camera for iPhone  Android revised 2.26.12
+/// </summary>
 public class GyroCam : MonoBehaviour
 {
 	private bool gyroBool;

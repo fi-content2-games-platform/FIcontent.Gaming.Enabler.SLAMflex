@@ -13,13 +13,16 @@
 #include "SendMessage.h"
 #include "SLAMflex.h"
 
-System ptam;  //PTAM system, whole plane detection is located here
-SendMessage SM; // used for communication between library and Unity3D
+///PTAM system, whole plane detection is located here
+System ptam;  
+/// used for communication between library and Unity3D
+SendMessage SM; 
 
-unsigned char *bwImage; // Black and white image
+/// Black and white image
+unsigned char *bwImage; 
 
 
-//Convert Unity3D web texture image to black and white image
+///Convert Unity3D web texture image to black and white image
 void convertToBlackWhite (unsigned char * pixels)
 {
     memcpy(bwImage,pixels,640*480*4);
@@ -37,7 +40,7 @@ void convertToBlackWhite (unsigned char * pixels)
 		}
 	}
 }
-
+///Heleper function for pixel manipulation
 void flip_vertically(unsigned char *pixels, const size_t width, const size_t height, const size_t bytes_per_pixel)
 {
     const size_t stride = width * bytes_per_pixel;
@@ -53,7 +56,7 @@ void flip_vertically(unsigned char *pixels, const size_t width, const size_t hei
     free(row);
 }
 
-//Change image formats from RGBA to BGRA
+///Change image formats from RGBA to BGRA
 void rgba_to_bgra(unsigned char *pixels, int width, int height)
 {
      for (int i = 0; i<width*height*4; i+=4)
@@ -62,10 +65,10 @@ void rgba_to_bgra(unsigned char *pixels, int width, int height)
 
     }
 }
-//Exported functions from libSlamflex library
+///Exported functions from libSlamflex library
 extern "C" {
 
-	//Setup slamflex and connect to unity3D
+	///Setup SLAMflex and connect to unity3D
 	void _StartSlam(void* pointerString, void* pointerPose, void* pointerStringLog, void* pointerArrayOfPoints)
     {
         std::cout << "=> Start SlamFlex service" << std::endl;
@@ -76,7 +79,7 @@ extern "C" {
         memset(bwImage, 0, ScreenHeight*ScreenWidth*4);
     }
 
-//Initiate plane detection
+	///Initiate plane detection
     void _StartPlaneDetection()
     {
         ptam.SendTrackerStartSig();
@@ -84,7 +87,7 @@ extern "C" {
         LOGV(LOG_TAG, "Info: %s", "-----Signal--StatusBar------");
     }
 
- //Function called each frame with pointer to image and width, height of image
+	///Function called each frame with pointer to image and width, height of image
 	const char* _SetNewFrame (void* pointer, int width, int height)
 	{
 		unsigned char* data = reinterpret_cast<unsigned char*>(pointer);
@@ -107,7 +110,7 @@ extern "C" {
 
         return (const char *[]){"Started", "InProgres", "Stopped", "Finished"}[ptam.GetCurrentDetectionState()];
 	}
-//Stops slam plane detection
+	///Stops slam plane detection
 	void _StopSlam()
 	{
         std::cout << "=> _Stop SlamFlex" << std::endl;

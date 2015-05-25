@@ -1,12 +1,4 @@
 // -*- c++ -*-
-// Copyright 2008 Isis Innovation Limited
-//
-// System.h
-//
-// Defines the System class
-//
-// This stores the main functional classes of the system, like the
-// mapmaker, map, tracker etc, and spawns the working threads.
 //
 #ifndef __SEND_MESSAGE
 #define __SEND_MESSAGE
