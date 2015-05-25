@@ -1,0 +1,413 @@
+\documentclass{article}
+\usepackage{epsfig}
+\pagestyle{empty}
+\begin{document}
+$ a < x < b $
+\pagebreak
+
+$ f(a) > f(x) < f(b) $
+\pagebreak
+
+$b$
+\pagebreak
+
+\[ g(a) = \Vec{s} + a \Vec{d} \]
+\pagebreak
+
+$f(x),\ x>0$
+\pagebreak
+
+$x$
+\pagebreak
+
+$f(x)$
+\pagebreak
+
+$\Vec{s}$
+\pagebreak
+
+$\Vec{d}$
+\pagebreak
+
+$f(\cdotp)$
+\pagebreak
+
+$f(\vec{s} + x\vec{d})$
+\pagebreak
+
+$x_\mathrm{optimal} = 0$
+\pagebreak
+
+$*100$
+\pagebreak
+
+$\nabla f(x)$
+\pagebreak
+
+$h$
+\pagebreak
+
+$h_i$
+\pagebreak
+
+$ y_i = f(h_i)$
+\pagebreak
+
+\[ \begin{array}{ccccccc} h_0 & y_0 & P_0 & & & \\ & & & P_{01} & & \\ h_1 & y_1 & P_1 & & P_{012} & \\ & & & P_{12} & & P_{0123} \\ h_2 & y_2 & P_2 & & P_{123} & \\ & & & P_{23} & & \\ h_3 & y_3 & P_3 & & & \\ \end{array} \]
+\pagebreak
+
+$P_{123}$
+\pagebreak
+
+$ h$
+\pagebreak
+
+$P_i = y_i = f(h_i)$
+\pagebreak
+
+\begin{equation} P_{k\cdots n} = \frac{(h - h_n)P_{k \cdots n-1} + (h_k - h)P_{k+1 \cdots n}}{h_k - h_n} \end{equation}
+\pagebreak
+
+$ h=0 $
+\pagebreak
+
+$ h_i = c^{-i} $
+\pagebreak
+
+$ c $
+\pagebreak
+
+\[ P_{k \cdots n} = \frac{c^{-k} P_{k+1 \cdots n} - P_{k \cdots n-1}}{c^{n - k} - 1} \]
+\pagebreak
+
+$P_{234}$
+\pagebreak
+
+$P_{34}$
+\pagebreak
+
+$P_{23}$
+\pagebreak
+
+$ t $
+\pagebreak
+
+$ c = 1.1 $
+\pagebreak
+
+$ t = 2 $
+\pagebreak
+
+\[ \frac{\partial^2 f}{\partial x^2} \approx \frac{f(x-h) - 2f(x) + f(x+h)}{h^2} \]
+\pagebreak
+
+\[ \frac{\partial^2 f}{\partial x\partial y} \approx \frac{f(x+h, y+h) - f(x-h,y+h) - f(x+h, y-h) + f(x-h, y-h)}{4h^2} \]
+\pagebreak
+
+$N+1$
+\pagebreak
+
+$f$
+\pagebreak
+
+$x_w$
+\pagebreak
+
+$x_0$
+\pagebreak
+
+$v = x_0 - x_w$
+\pagebreak
+
+$ x_r = x_0 + \alpha v$
+\pagebreak
+
+$f(x_r)$
+\pagebreak
+
+$x_e = x_0 + \rho \alpha v $
+\pagebreak
+
+$x_e$
+\pagebreak
+
+$x_r$
+\pagebreak
+
+$x_c = x_0 + \gamma v$
+\pagebreak
+
+$f(x_c) < f(x_r)$
+\pagebreak
+
+$x_c$
+\pagebreak
+
+$\sigma$
+\pagebreak
+
+$\alpha = 1$
+\pagebreak
+
+$\rho = 2$
+\pagebreak
+
+$\gamma = 1/2$
+\pagebreak
+
+$\sigma = 1/2$
+\pagebreak
+
+$[A | I ]$
+\pagebreak
+
+$[ I | A^{-1}]$
+\pagebreak
+
+$Ax = b$
+\pagebreak
+
+$A$
+\pagebreak
+
+$ a < b < c $
+\pagebreak
+
+$ f(a) > f(b) < f(c) $
+\pagebreak
+
+$M^{\dagger}A$
+\pagebreak
+
+$M^{\dagger}b$
+\pagebreak
+
+$M^{\dagger}$
+\pagebreak
+
+$L_2$
+\pagebreak
+
+$L_2^2$
+\pagebreak
+
+$L_1$
+\pagebreak
+
+$L_\infty$
+\pagebreak
+
+$\hat{v}$
+\pagebreak
+
+$[v_1, v_2, \cdots, v_{i-1}] / v_i $
+\pagebreak
+
+$[v_1, v_2, \cdots, v_{i}, 1]$
+\pagebreak
+
+$ \frac{m + m^{\mathsf T}}{2} $
+\pagebreak
+
+$p = (x,y)$
+\pagebreak
+
+$q = ( \operatorname{round}\ x, \operatorname{round}\ y)$
+\pagebreak
+
+$v$
+\pagebreak
+
+$v = I(q)$
+\pagebreak
+
+$p' = ( \operatorname{floor}\ x, \operatorname{floor}\ y)$
+\pagebreak
+
+$\delta = p - p'$
+\pagebreak
+
+$p'$
+\pagebreak
+
+\[\begin{array}{rl} a =& I(p')\\ b =& I(p' + (1,0))\\ c =& I(p' + (0,1))\\ d =& I(p' + (1,1)) \end{array} \]
+\pagebreak
+
+\[v = (1-\delta_y)((1-\delta_x)a + \delta_xb) + \delta_y((1-\delta_x)c + \delta_xd)\]
+\pagebreak
+
+\[ v = \sum_{m=-1}^2\sum_{n=-1}^2 I(x' + m, y' + n)r(m - \delta_x)r(\delta_y-n) \]
+\pagebreak
+
+\[\begin{array}{rl} r(x) =& \frac{1}{6}\left[ p(x+2)^3 - 4p(x+1)^3 + 6p(x)^3 - 4p(x-1)^3 \right]\\ p(x) =& \begin{cases}x&x>0\\0&x \le 0\end{cases} \end{array}\]
+\pagebreak
+
+$w(x)=\frac{1}{\sigma + |x|}$
+\pagebreak
+
+$w(x)=\frac{1}{\sigma + x^2}$
+\pagebreak
+
+$w(x)=1$
+\pagebreak
+
+$w(x)$
+\pagebreak
+
+$w(x) + xw'(x)$
+\pagebreak
+
+$\int xw(x)dx$
+\pagebreak
+
+$M\underline{x} = \underline{c}$
+\pagebreak
+
+$M$
+\pagebreak
+
+\[M = L \times U\]
+\pagebreak
+
+$L$
+\pagebreak
+
+$U$
+\pagebreak
+
+$M^{-1}A$
+\pagebreak
+
+$M^{-1}b$
+\pagebreak
+
+$3\times4$
+\pagebreak
+
+\[\begin{matrix}\text{Row major} & \text {Column major}\\ \begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix} & \begin{bmatrix}1&4&7\\2&5&8\\3&6&9\end{bmatrix} \end{matrix}\]
+\pagebreak
+
+\[ AP = QR \]
+\pagebreak
+
+$P$
+\pagebreak
+
+$R$
+\pagebreak
+
+$i$
+\pagebreak
+
+$P(i)$
+\pagebreak
+
+$QR$
+\pagebreak
+
+$2\times 3$
+\pagebreak
+
+$\underline{x}$
+\pagebreak
+
+$\underline{x}'$
+\pagebreak
+
+\[\begin{aligned}\underline{x}' &= E\times\underline{x}\\ \begin{bmatrix}x'\\y'\end{bmatrix} &= \begin{pmatrix}r_{11} & r_{12} & t_1\\r_{21} & r_{22} & t_2\end{pmatrix}\begin{bmatrix}x\\y\\1\end{bmatrix}\end{aligned}\]
+\pagebreak
+
+$3\times$
+\pagebreak
+
+\[\begin{aligned}\underline{x}' &= E\times\underline{x}\\ \begin{bmatrix}x'\\y'\\z'\end{bmatrix} &= \begin{pmatrix}r_{11} & r_{12} & r_{13} & t_1\\r_{21} & r_{22} & r_{23} & t_2\\r_{31} & r_{32} & r_{33} & t_3\end{pmatrix}\begin{bmatrix}x\\y\\z\\1\end{bmatrix}\end{aligned}\]
+\pagebreak
+
+$ B $
+\pagebreak
+
+$ e^{\text{Adj}(v)} = Be^{v}B^{-1} $
+\pagebreak
+
+$\vec{w}$
+\pagebreak
+
+$ \theta = |\vec{w}|$
+\pagebreak
+
+$\frac{\sin \theta}{\theta}$
+\pagebreak
+
+$\frac{1 - \cos \theta}{\theta^2}$
+\pagebreak
+
+$ \sum_i w_iG_i$
+\pagebreak
+
+$3\times3$
+\pagebreak
+
+$ M $
+\pagebreak
+
+$Adj()$
+\pagebreak
+
+$ e^{\text{Adj}(v)} = Me^{v}M^{-1} $
+\pagebreak
+
+\[M = U \times D \times V^T\]
+\pagebreak
+
+$D$
+\pagebreak
+
+$V$
+\pagebreak
+
+\[M^{\dagger} = V \times D^{-1} \times U^T\]
+\pagebreak
+
+$D^{-1}$
+\pagebreak
+
+\[M = U \times \Lambda \times U^T\]
+\pagebreak
+
+$U^T = U^{-1}$
+\pagebreak
+
+$\Lambda$
+\pagebreak
+
+$Lambda^{-1}$
+\pagebreak
+
+$U^T$
+\pagebreak
+
+$\sigma^2 = \frac{1}{\text{val}}$
+\pagebreak
+
+$\sigma_i^2 = \frac{1}{\text{v}_i}$
+\pagebreak
+
+$m$
+\pagebreak
+
+$\frac{\partial\text{m}}{\partial\text{param}_i}$
+\pagebreak
+
+$\frac{\partial\text{m}_i}{\partial\text{param}_j}$
+\pagebreak
+
+$J^\dagger e$
+\pagebreak
+
+$J^{\mathsf T} e$
+\pagebreak
+
+$(J^{\mathsf T} J + P)^{-1}$
+\pagebreak
+
+\end{document}

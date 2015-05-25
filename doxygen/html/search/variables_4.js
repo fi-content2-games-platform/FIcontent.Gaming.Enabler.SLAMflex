@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['d',['d',['../d2/d94/a00184.html#a608839a8d7682391ada3ff25686ccaaa',1,'HomographyDecomposition']]],
+  ['data',['data',['../d6/d5b/a00026.html#a18667f62de414964df3f4084a85159de',1,'CVD::Internal::placement_delete::Array']]],
+  ['dcreationtime',['dCreationTime',['../d9/d21/a00240.html#a9917398db199d7704656a29408bea345',1,'MapPoint']]],
+  ['derrorsquared',['dErrorSquared',['../d0/da7/a00250.html#a709bd4c18cac0ffc5aa44b15629c8783',1,'Meas']]],
+  ['desirednumberofcorners',['DesiredNumberOfCorners',['../dd/d4d/a00519.html#adec0370f2381b38ea59fbb64ff11b794',1,'globals.h']]],
+  ['desirednumberofcornersoffset',['DesiredNumberOfCornersOffset',['../dd/d4d/a00519.html#a004eaa32e2c80b0a08f55a178cc5cfc9',1,'globals.h']]],
+  ['diag_5flimit',['DIAG_LIMIT',['../d2/d56/a00384.html#ab53dc0730c73a0d306a9331d660e402a',1,'TooN::SL']]],
+  ['diagsize',['DiagSize',['../d7/d3f/a00173.html#a613b0a842d4ea5cd4bc7b15a9488281a',1,'TooN::Internal::GenericMBase']]],
+  ['diagstride',['DiagStride',['../d7/d3f/a00173.html#ac8ac1eeff4125a58c73177452a557506',1,'TooN::Internal::GenericMBase']]],
+  ['diff',['diff',['../d5/d13/a00205.html#a4e5d84bd0a1ed40207d9249c52d497e0',1,'CVD::Pixel::Internal::int_info']]],
+  ['dim',['dim',['../d2/d56/a00384.html#a4c11673377a2cebb69ea4ef9a9304c1e',1,'TooN::SL']]],
+  ['direction',['direction',['../da/d31/a00234.html#a1af11fd961402f5a469d9d9d5b6da972',1,'TooN::Internal::LineSearch']]],
+  ['do_5fpivoting',['do_pivoting',['../da/de0/a00317.html#a68337b568c640113bf0900b91e26eefb',1,'TooN::QR_Lapack']]],
+  ['double_5ffor_5fbyte',['double_for_byte',['../dc/d66/a00630.html#acbee83e2820dbb6798fbf5c6f3835b79',1,'CVD::Pixel::Internal']]],
+  ['dscenedepthmean',['dSceneDepthMean',['../dc/d55/a00226.html#a994d0023adb8348cfa6ecd4f61db0b8b',1,'KeyFrame']]],
+  ['dscenedepthsigma',['dSceneDepthSigma',['../dc/d55/a00226.html#a666d792dbb1302b0ebfc38f2d8355e76',1,'KeyFrame']]],
+  ['dsqrtinvnoise',['dSqrtInvNoise',['../d0/da7/a00250.html#a70eb53731067ad51799651e3b900ca9d',1,'Meas::dSqrtInvNoise()'],['../d2/de1/a00421.html#afd41f4f9de63b1ab2bac03fe6cf587a3',1,'TrackerData::dSqrtInvNoise()']]],
+  ['dstscore',['dSTScore',['../d1/dc6/a00037.html#af34c2333962dfc180489358e0a93c93d',1,'Candidate']]],
+  ['dummy',['dummy',['../d4/db5/a00328.html#a73cedb9c6132826e7c1358ed562d4cfa',1,'CVD::Rgb8']]],
+  ['dynamic',['Dynamic',['../d0/de7/a00523.html#acf311904f241356e02e769b0b33adb2a',1,'TooN']]]
+];
